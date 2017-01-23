@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tekkom.rpl.miro">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_miro"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Track -->
+        <activity
+            android:name=".track.views.TrackActivity"
+            android:label="@string/title_activity_track"
+            android:parentActivityName=".views.MainActivity"
+            android:theme="@style/AppTheme.Green">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".track.views.MapsTrackActivity"
+            android:label="@string/title_activity_maps_track"
+            android:parentActivityName=".track.views.TrackActivity"
+            android:theme="@style/AppTheme.Green">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.track.views.TrackActivity" />
+        </activity>
+
+        <!-- Mikrolet -->
+        <activity
+            android:name=".listMikrolet.views.ListMikroletActivity"
+            android:label="@string/title_activity_list_mikrolet"
+            android:parentActivityName=".views.MainActivity"
+            android:theme="@style/AppTheme.Purple">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".listMikrolet.views.MapsMicroletActivity"
+            android:label="@string/title_activity_maps_microlet"
+            android:parentActivityName=".listMikrolet.views.ListMikroletActivity"
+            android:theme="@style/AppTheme.Purple">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.listMikrolet.views.ListMikroletActivity" />
+        </activity>
+        <activity
+            android:name=".listMikrolet.views.DetailMikroletActivity"
+            android:label="@string/title_activity_detail_mikrolet"
+            android:parentActivityName=".listMikrolet.views.MapsMicroletActivity"
+            android:theme="@style/AppTheme.Purple">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.listMikrolet.views.MapsMicroletActivity" />
+        </activity>
+
+        <!-- Cityspot -->
+        <activity
+            android:name=".citySpot.views.CitySpotActivity"
+            android:label="@string/title_activity_city_spot"
+            android:parentActivityName=".views.MainActivity"
+            android:theme="@style/AppTheme.Blue">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".citySpot.views.MapsCitySpotActivity"
+            android:label="@string/title_activity_maps_city_spot"
+            android:theme="@style/AppTheme.Blue">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.citySpot.views.CitySpotActivity" />
+        </activity>
+
+        <!-- About -->
+        <activity
+            android:name=".views.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".views.MainActivity"
+            android:theme="@style/AppTheme.Red">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tekkom.rpl.miro.views.MainActivity" />
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+    </application>
+
+</manifest>

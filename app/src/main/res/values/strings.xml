@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Miro</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main">Miro Apps</string>
+    <string name="title_activity_track">Track Mikrolet</string>
+    <string name="title_activity_maps_track">Tracking</string>
+    <string name="title_activity_detail_mikrolet">Mikrolet</string>
+    <string name="title_activity_list_mikrolet">Daftar Mikrolet</string>
+    <string name="title_activity_maps_microlet">Lokasi Mikrolet</string>
+    <string name="title_activity_city_spot">Daftar Cityspot</string>
+    <string name="title_activity_maps_city_spot">Lokasi Cityspot</string>
+    <string name="title_activity_about">About Us</string>
+
+    <string name="more_detail">Lihat Lebih Detail</string>
+    <string name="less_detail">Lihat Lebih Sedikit</string>
+
+    <string name="search_hint">Locations</string>
+</resources>

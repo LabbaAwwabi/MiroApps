@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryDark">@color/blue_dark</color>
+    <color name="colorAccent">@color/orange_accent</color>
+
+    <!--red-->
+    <color name="red">#f44336</color> <!--500-->
+    <color name="red_dark">#b71c1c</color> <!--900-->
+    <color name="red_light">#e57373</color> <!--300-->
+    <color name="red_accent">#ff1744</color> <!--A400-->
+
+    <!--pink-->
+    <color name="pink">#e91e63</color> <!--500-->
+    <color name="pink_dark">#d81b60</color> <!--600-->
+    <color name="pink_light">#f48fb1</color> <!--200-->
+    <color name="pink_accent">#ff4081</color> <!--A200-->
+
+    <!--purple-->
+    <color name="purple">#9c27b0</color> <!--500-->
+    <color name="purple_dark">#6a1b9a</color> <!--800-->
+    <color name="purple_light">#ce93d8</color> <!--200-->
+    <color name="purple_accent">#d500f9</color> <!--A400-->
+    <color name="purple_transparent">#CC9c27b0</color> <!--500-->
+
+    <!--blue-->
+    <color name="blue">#2196f3</color> <!--500-->
+    <color name="blue_dark">#0d47a1</color> <!--900-->
+    <color name="blue_light">#64b5f6</color> <!--300-->
+    <color name="blue_accent">#2979ff</color> <!--A400-->
+
+    <!--orange-->
+    <color name="orange">#ff9800</color> <!--500-->
+    <color name="orange_dark">#e65100</color> <!--900-->
+    <color name="orange_light">#ffb74d</color> <!--300-->
+    <color name="orange_accent">#ff9100</color> <!--A400-->
+
+    <!--green-->
+    <color name="green">#4caf50</color> <!--500-->
+    <color name="green_dark">#1b5e20</color> <!--900-->
+    <color name="green_light">#81c784</color> <!--300-->
+    <color name="green_accent">#00e676</color> <!--A400-->
+
+    <!--yellow-->
+    <color name="yellow">#ffeb3b</color> <!--500-->
+    <color name="yellow_dark">#f9a825</color> <!--800-->
+    <color name="yellow_light">#fff176</color> <!--300-->
+    <color name="yellow_accent">#ffea00</color> <!--A400-->
+
+    <color name="background_menu">#eceff1</color>
+</resources>
